@@ -1,9 +1,17 @@
 /* Title */
 .title {
     text-align: center;
+    color: lightyellow;
 }
 
 /* Search area */
 .search-area {
     text-align: center;
+    border: 5px;
+    border-color: black;
+}
+
+/* General body styles */
+body {
+    color: blue;
 }
