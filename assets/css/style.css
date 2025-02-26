@@ -1,7 +1,9 @@
 /* Title */
 .title {
     text-align: center;
-    color: lightyellow;
+    color: yellow;
+    text-decoration: underline;
+    font-weight: 200;
 }
 
 /* Search area */
@@ -9,9 +11,14 @@
     text-align: center;
     border: 5px;
     border-color: black;
+    justify-content: center;
+}
+
+.input {
+    max-width: 30%;
 }
 
 /* General body styles */
 body {
-    color: blue;
+    background-color: lightblue;
 }
