@@ -19,9 +19,16 @@
     max-width: 50%;
 }
 
-.main-search-area {
-    background-color: white;
+.input-center {
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.input-split {
+    display: flex;
+    justify-content: center;
+}
+
 /* Results section */
 /*#results-section {
     
