@@ -19,6 +19,9 @@
     max-width: 50%;
 }
 
+.main-search-area {
+    background-color: white;
+}
 /* Results section */
 /*#results-section {
     
@@ -27,4 +30,8 @@
 /* General body styles */
 body {
     background-color: lightblue;
+}
+
+.center {
+    text-align: center;
 }
