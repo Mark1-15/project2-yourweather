@@ -39,32 +39,11 @@
     <!-- Search area -->
     <!-- Search area search bar -->
      <div class="search-area mb-2">
-        <input class="form-control me-2 input" type="search" placeholder="Search location" aria-label="Search">
-        <button class="btn btn-warning" type="submit">Search</button>
+        <input class="form-control me-2 input" type="search" placeholder="Search location" aria-label="Search" id="locationInput">
+        <button class="btn btn-warning" type="submit" id="searchButton">Search</button>
      </div> 
 
     <!-- Search area optional buttons/filters -->
-    <!-- <fieldset class="center">
-      <p>Please select any filters you wish to apply to your search below</p>
-      <div class="input-center">
-      <div class="input-split">
-        <input type="checkbox" name="windspeed" id="windspeed" >
-        <label for="windspeed">Windspeed</label>
-      </div>
-      <div class="input-split">
-        <input type="checkbox" name="kelvin" id="kelvin">
-        <label for="kelvin">Kelvin</label>
-      </div>
-      <div class="input-split">
-        <input type="checkbox" name="fahrenheit" id="fahrenheit">
-        <label for="fahrenheit">Fahrenheit</label>
-      </div>
-      <div class="input-split">
-        <input type="checkbox" name="kph" id="kph">
-        <label for="kph">Killometers per hour</label>
-        </div>
-      </div>
-    </fieldset> -->
     <section id="options-section" class="container section">
       <div class="row">
     <div class="col-12 col-md-6  my-4">
@@ -117,8 +96,8 @@
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
+        <li class="list-group-item" id="day1-temp">An item</li>
+        <li class="list-group-item" id="location-card">A second item</li>
         <li class="list-group-item">A third item</li>
       </ul>
       <div class="card-body">
@@ -163,6 +142,9 @@
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/3d07db4e3b.js" crossorigin="anonymous"></script>
+
+    <!-- Link to script.js -->
+     <script src="assets/javascript/script.js"></script>
 
 </body>
 </html>
