@@ -19,3 +19,7 @@ const fahrenheit = document.getElementById("");
 const kph = document.getElementById("");
 const extra = document.getElementById("");
 
+/* Search function */
+ function searchWeather() {
+    searchButton.addEventListener(search);
+ } 
