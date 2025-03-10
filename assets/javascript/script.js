@@ -7,13 +7,17 @@ const searchButton = document.getElementById("searchButton");
 
 /* Found the solution for this function online */
 async function checkWeather(location) { 
+    try {
     const response = await fetch(apiUrl + location + `&appid=${apiKey}`);
     var data = await response.json();
-
     console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
 
     const locationName = document.getElementById("card-title1").innerHTML = data.name;
     const temperature = document.getElementById("card-title2").innerHTML = data.main.temp;
+    const description = document.getElementById("card-title3").innerHTML = data.weather;
 } 
 
 searchButton.addEventListener("click", ()=>{
