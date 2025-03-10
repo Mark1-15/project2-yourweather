@@ -1,13 +1,13 @@
 /* API Key and URL */ 
 const apiKey = "423b063fbe53a6369dab2add71d4e472";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q";
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchInput = document.getElementById("searchInput");
 const searchButton = document.getElementById("searchButton");
 
 /* Found the solution for this function online */
-async function checkWeather() { 
-    const response = await fetch(apiUrl + `&appid=${apiKey}`);
+async function checkWeather(location) { 
+    const response = await fetch(apiUrl + location + `&appid=${apiKey}`);
     var data = await response.json();
 
     console.log(data);
