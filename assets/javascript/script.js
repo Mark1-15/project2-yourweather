@@ -2,6 +2,9 @@
 const apiKey = "423b063fbe53a6369dab2add71d4e472";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q";
 
+const searchInput = document.getElementById("searchInput");
+const searchButton = document.getElementById("searchButton");
+
 /* Found the solution for this function online */
 async function checkWeather() { 
     const response = await fetch(apiUrl + `&appid=${apiKey}`);
@@ -13,10 +16,9 @@ async function checkWeather() {
     const temperature = document.getElementById("card-title2").innerHTML = data.main.temp;
 } 
 
-
-checkWeather();
-
-
+searchButton.addEventListener("click", ()=>{
+    checkWeather(searchInput.value);
+})
 
 /** 
 
