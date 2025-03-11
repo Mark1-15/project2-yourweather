@@ -22,11 +22,34 @@ async function checkWeather(location) {
     const humidity = document.getElementById("humidity").innerHTML = "Humidity: " + data.main.humidity + "%";
     const pressure = document.getElementById("pressure").innerHTML = "Pressure: " + data.main.pressure + "mb";
     const windspeeed = document.getElementById("windspeed").innerHTML = "Windspeed: " + data.wind.speed + "mph";
+    const weatherImage = document.getElementById("weatherImagePic");
+
+    /* Got the first line of this code online */
+    if (data.weather[0].main == "Rain"){
+        weatherImage.src = "/assets/images/rain.png"
+    } 
+    else if (data.weather[0].main == "Clouds"){
+        weatherImage.src = "/assets/images/clouds.png"
+    } 
+    else if (data.weather[0].main == "Clear"){
+        weatherImage.src = "/assets/images/clear.png"
+    } 
+    else if (data.weather[0].main == "Snow"){
+        weatherImage.src = "/assets/images/snow.png"
+    } 
+    else if (data.weather[0].main == "Drizzle"){
+        weatherImage.src = "/assets/images/drizzle.png"
+    }
+    else if (data.weather[0].main == "Mist"){
+        weatherImage.src = "/assets/images/mist.png"
+    }
 } 
 
 searchButton.addEventListener("click", ()=>{
     checkWeather(searchInput.value);
 })
+    
+
 
 /** 
 
