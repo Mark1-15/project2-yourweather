@@ -24,7 +24,7 @@ async function checkWeather(location) {
     const windspeeed = document.getElementById("windspeed").innerHTML = "Windspeed: " + data.wind.speed + "mph";
     const weatherImage = document.getElementById("weatherImagePic");
 
-    /* Got the first line of this code online */
+    /* Got the first line of this code online then added the rest myself */
     if (data.weather[0].main == "Rain"){
         weatherImage.src = "/assets/images/rain.png"
     } 
