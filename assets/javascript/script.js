@@ -49,10 +49,18 @@ async function checkWeather(location) {
     checkWeather(searchInput.value);
 }) */
 
-function sum(tempInF) {
-    return tempInF * (9/5) + 32;
+/* Function to turn temperature in C to temperature in Fahrenheit */
+function sumFahrenheit(temp) {
+    return temp * (9/5) + 32;
   }
-  module.exports = sum;
+
+/* Function to turn temperature in C to temperature in Kelvin */
+function sumKelvin(temp) {
+    return temp + 273.15;
+  }
+  module.exports = { sumFahrenheit, sumKelvin };
+  
+
 
 /* Test function example 
 function sum(a, b) {
