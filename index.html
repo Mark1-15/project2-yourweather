@@ -43,10 +43,12 @@
         <button class="btn btn-warning" type="submit" id="searchButton">Search</button>
      </div> 
 
+    <!-- Interactive Section -->
+    <section class="container section">
+      <div class="row">
+
     <!-- Search area optional buttons/filters -->
-    <section id="options-section" class="container section">
-     <div class="row">
-      <div class="col-12 col-md-6  my-4">
+     <div class="col-12 col-md-4 my-4">
        <input type="checkbox" name="kelvin" id="kelvin">
         <label for="kelvin">Kelvin</label>
        <input type="checkbox" name="fahrenheit" id="fahrenheit">
@@ -54,14 +56,9 @@
        <input type="checkbox" name="kph" id="kph">
         <label for="kph">Killometers per hour</label>
       </div>
-     </div>
-    </section> 
 
-    <!-- Results area -->
-    <section id="results-section" class="container section">
-      <div class="row"> 
-
-    <div class="col-12 col-md-6 col-xl-3 my-4">
+    <!-- Results area --> 
+    <div class="col-12 col-md-4 my-4">
     <div class="card" style="width: 18rem;">
       <img src="assets/images/search.png" class="card-img-top" id="weatherImagePic" alt="Picture of weather icon">
       <div class="card-body">
@@ -77,9 +74,16 @@
       </ul>
     </div>
     </div>
-    </div>
-    </div>
-    </section> 
+
+    <!-- Welcome message -->
+    <div class="col-12 col-md-4 my-4">
+      <h1>Welcome to YourWeather</h1>
+      <p>Welcome to YourWeather, youy go-to site for all your weather needs!
+        <br>
+        Here you can find any location in the world and discover the climate activity therein by using a global and accurate API to obtain information such as temperature, pressure, the weather, and more! You can also use the filters above to tailor the results for all your meteorological needs!
+      </p>
+  </div>
+</section>
 
     <!-- Footer -->
      <footer>
