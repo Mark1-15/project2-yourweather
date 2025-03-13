@@ -1,0 +1,22 @@
+{
+  "name": "yourweathertesting",
+  "version": "1.0.0",
+  "description": "The purpose of this project was to create a website (interactive front end) of a weather website to demonstrate the JavaScript and other skills that I have developed on my diploma in web development with code institute.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mark1-15/project2-yourweather.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mark1-15/project2-yourweather/issues"
+  },
+  "homepage": "https://github.com/Mark1-15/project2-yourweather#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
