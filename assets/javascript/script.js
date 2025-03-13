@@ -58,7 +58,13 @@ function sumFahrenheit(temp) {
 function sumKelvin(temp) {
     return temp + 273.15;
   }
-  module.exports = { sumFahrenheit, sumKelvin };
+
+/* Function to turn wind speed from miles per hour to kilometers per hour */
+function sumKPH(speed) {
+    return speed * 1.609;
+  }
+
+  module.exports = { sumFahrenheit, sumKelvin, sumKPH };
   
 
 
