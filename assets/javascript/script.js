@@ -45,9 +45,14 @@ async function checkWeather(location) {
     }
 } 
 
-searchButton.addEventListener("click", ()=>{
+/* searchButton.addEventListener("click", ()=>{
     checkWeather(searchInput.value);
-}) 
+}) */
+
+function sum(tempInF) {
+    return tempInF * (9/5) + 32;
+  }
+  module.exports = sum;
 
 /* Test function example 
 function sum(a, b) {
