@@ -16,7 +16,7 @@ async function checkWeather(location) {
     }
 
     const locationName = document.getElementById("location").innerHTML = data.name;
-    const temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + data.main.temp + "°C";
+    const temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + math.round(data.main.temp) + "°C";
     const description = document.getElementById("description").innerHTML = "Description: " + data.weather[0].description;
     const main = document.getElementById("main").innerHTML = "Weather: " + data.weather[0].main;
     const humidity = document.getElementById("humidity").innerHTML = "Humidity: " + data.main.humidity + "%";
@@ -45,29 +45,32 @@ async function checkWeather(location) {
     }
 } 
 
-/* searchButton.addEventListener("click", ()=>{
+searchButton.addEventListener("click", ()=>{
     checkWeather(searchInput.value);
-}) */
+}) 
 
 /* Function to turn temperature in C to temperature in Fahrenheit */
 function sumFahrenheit(temp) {
-    return temp * (9/5) + 32;
-  }
+    return temp * (9/5) + 32; 
+  } 
 
 /* Function to turn temperature in C to temperature in Kelvin */
 function sumKelvin(temp) {
     return temp + 273.15;
-  }
+  } 
 
 /* Function to turn wind speed from miles per hour to kilometers per hour */
 function sumKPH(speed) {
     return speed * 1.609;
   }
 
-  module.exports = { sumFahrenheit, sumKelvin, sumKPH };
+  module.exports = { sumFahrenheit, sumKelvin, sumKPH }; 
 
   /* Code for optional checkboxes */
-  
+  const kelvinCheckbox = document.getElementById(kelvin);
+  const fahrenheitCheckbox = document.getElementById(fahrenheit);
+  const kphCheckbox = document.getElementById(kph);
+
   
 
 
