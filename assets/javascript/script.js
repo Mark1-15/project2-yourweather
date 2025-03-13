@@ -47,13 +47,13 @@ async function checkWeather(location) {
 
 searchButton.addEventListener("click", ()=>{
     checkWeather(searchInput.value);
-})
+}) 
 
-/* Test function example */
+/* Test function example 
 function sum(a, b) {
     return a + b;
   }
-  module.exports = sum;
+  module.exports = sum; */
     
 
 
