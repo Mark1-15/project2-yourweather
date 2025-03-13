@@ -65,6 +65,9 @@ function sumKPH(speed) {
   }
 
   module.exports = { sumFahrenheit, sumKelvin, sumKPH };
+
+  /* Code for optional checkboxes */
+  
   
 
 

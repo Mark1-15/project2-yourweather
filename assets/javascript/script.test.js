@@ -14,7 +14,7 @@ test('Fahrenheit = ((temperature in celcius) * (9/5)) +32 ', () => {
     expect(sumKelvin(10)).toBe(283.15);
   }); 
 
-/* Test for KPH  */
+/* Test for Kilometers Per Hour  */
 test('wind speed in kilometers per hour = wind speed in miles per hour * 1.609 ', () => {
     expect(sumKPH(10)).toBe(16.09);
   }); 
