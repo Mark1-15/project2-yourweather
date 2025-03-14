@@ -182,3 +182,13 @@ Here is the GitHub guide for cloning repositories:
 https://pages.github.com/
 
 This project was deployed early in development as per good software development practice to help spot bugs as they appeared on a real website and not just a developer environment. Interestingly, a bug appeared with the weather images on the weather images on the deployed site and not in the development environment, this was discussed in the testing/bugs section. Overall, the deployment of this website was a smooth experience, with no issues flagging up as a result.
+
+## 6. Credits
+
+Firstly, I would like to thank my mentor for helping me create this project and bring about the final result. He helped my inception of the project, brining up useful ideas to consider and implement. 
+
+I would also like to thank the free technologies that I have been able to use for this project, I will once again mention Bootstrap, GitHub, Visual Studio Code, Jest, and Slack for all of these tools that have helped made coding this project possible. Furthermore, I would also like to thank the code institute tutors who helped get jest running and helped resolve my file-path issue for the weather images on the bootstrap card.
+
+I would like to thank the creators for the 2 YouTube tutorial vidoes I used that helped me with ideas to construct my JavaScript code, both are linked below.
+
+Last, and certainly not least I would like to once again thank Code Institute. I have learned interactive front end software development with JavaScript in a matter of weeks thank to them and would not have been able to create this project without them. Furthermore, the walkthrough projects throughout this module culminating in this project have been particularly useful. I would not be here without the teaching I have received from Code institute, and hope this project shows the skills I have learned, and now have been able to implement.
