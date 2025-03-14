@@ -133,8 +133,34 @@ In this project, I also used the testing framework Jest to test various blocks o
 
 I would also like to thank Code Institute for teaching me on how to code in JavaScript, and on how to use many of the tools listed above. There work on previous projects has helped me carve out ideas for myself and use them in the creation of this website, and as already noted, 2 small code snippets from previous projects with them have been used in this project for efficiency and display, with another found elsewhere online.
 
+## 4. Testing
 
-## 5.Deployment
+### Bug Fixes
+
+##### Major
+
+As you may be able to see with different code commits, I used a different API at the start of the project compared to the finished product. I switched weather API’s after starting the project as I realised that the first API’s results wasn’t tailored to the user and project needs. Therefore, I set up another account for another API and then implemented this into the finished product. This took a lot of time out of my schedule having to start again and familiarise myself with a new API but with the finished product working the way it is the switch was necessary and worth it.
+
+Nearing the end of the project, when I had a few functions of JavaScript code left to write, I decided that I wanted to use Jest to test this code, to replicate working on this project as within a real world testing driven development environment. I tried searching the web on guides how to install Jest and use it on Visual Studio Code, and after a few failed attempts with different guides followed I decided to consult with a Tutor at code institute who supplied me with their guide. I followed this guide and was still having trouble, after a few hours of debugging and a PC restart we managed to install the npm and Jest which I was then able to use to test snippets of my code.
+
+##### Minor
+
+I encountered several minor bugs when coding this project that are listed below. Thanks to some basic troubleshooting and my problem-solving abilities, I was able to solve them without too much trouble.
+
+I had issues with the responsiveness of the of the site on different devices. Initially, moving the different areas around on the main areas of the page was troublesome but after successfully implementing the column functionality this was resolved, and the page was formatted correctly. 
+
+For the Kilometres per hour optional checkbox, I was having an issue where I could click/tap outside of the box in that area and the box would be checked, reformatting the page thankfully resolved this issue and the checkbox works normally now.
+
+I was unable to display the results of the API in the card as I kept on receiving an error, I noticed that data wasn’t defined, this was because it was currently sitting outside of the function. This was an issue as the scope of this function was local not global. After moving everything that was needed back into the function the issue was resolved. 
+
+I was having issues retrieving results from the API, but after I realised the URL has an extra unnecessary part I removed it and was able to then procure the correct results from the API. 
+I would also like to thank the Tutors at code institute who helped me resolve a bug of the weather images. In the IDE the weather images would load on the card no problem but on the deployed  no picture would show. This is because I was using an incorrect file path, I was using a “/” root directory for the weather images when I should have been using the “./” current working directory in script.js, and I should have left out the “/” in the html file as it was unnecessary. 
+
+Some human error came into play when creating the optional checkboxes functions, for the Fahrenheit function because I used “+” instead of “*” in the formulae, and I did something similar in the Kilometres per hour function but it was quickly resolved. Setting up Jest to test the code was a pain but definitely worth it as I’m assured these functions work as intended as they display as passed as seen below.
+
+I used the Math.round function to round the temperature result, this caused the results to disappear on the screen. After discovering the syntax error I quickly amended and got the result to work as intended.
+
+## 5. Deployment
 
 This project was deployed using CLOUD9 IDE, committed to git, and then pushed to GitHub using the built in function within Cloud9.
 
