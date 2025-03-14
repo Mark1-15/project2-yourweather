@@ -37,3 +37,14 @@ body {
 .center {
     text-align: center;
 }
+
+/* Footer styles */
+.footer {
+    background-color: coral;
+}
+
+.cu-title {
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}

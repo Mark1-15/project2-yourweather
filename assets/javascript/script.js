@@ -16,7 +16,7 @@ async function checkWeather(location) {
     }
 
     const locationName = document.getElementById("location").innerHTML = data.name;
-    let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + data.main.temp + "°C";
+    let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(data.main.temp) + "°C";
     const description = document.getElementById("description").innerHTML = "Description: " + data.weather[0].description;
     const main = document.getElementById("main").innerHTML = "Weather: " + data.weather[0].main;
     const humidity = document.getElementById("humidity").innerHTML = "Humidity: " + data.main.humidity + "%";
