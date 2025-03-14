@@ -16,7 +16,7 @@ async function checkWeather(location) {
     }
 
     const locationName = document.getElementById("location").innerHTML = data.name;
-    const temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + data.main.temp + "°C";
+    let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + data.main.temp + "°C";
     const description = document.getElementById("description").innerHTML = "Description: " + data.weather[0].description;
     const main = document.getElementById("main").innerHTML = "Weather: " + data.weather[0].main;
     const humidity = document.getElementById("humidity").innerHTML = "Humidity: " + data.main.humidity + "%";
@@ -47,6 +47,11 @@ async function checkWeather(location) {
 
 searchButton.addEventListener("click", ()=>{
     checkWeather(searchInput.value);
+
+    if(kelvinCheckbox.checked){
+        sumKelvin(data.main.temp);
+        let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + sumKelvin(data.main.temp) + "K";
+    }
 }) 
 
 /* Function to turn temperature in C to temperature in Fahrenheit */
@@ -72,9 +77,11 @@ function sumKPH(speed) {
   const kphCheckbox = document.getElementById(kph); 
 
   /* Add event listener to show temperature as kelvin if clicked */
-  kelvinCheckbox.addEventListener("click", ()=>{
-    sumKelvin(temperature);
-}) 
+  searchButton.onclick = function(){
+
+    
+  } 
+
 
 
 /* Test function example 
