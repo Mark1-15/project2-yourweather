@@ -132,3 +132,53 @@ Google fonts were also used to implement the fonts used in this project.
 In this project, I also used the testing framework Jest to test various blocks of code. I am aware of the industry standard testing driven development and wanted to follow suit with this project. I used node.js to install and setup jest to be able to use it for the site. More details regarding the testing is found under the testing section. I had some trouble setting up jest in VS Code, the IDE I and the rest of Code Institute have recently changed to. I’m thankful for the tutors at code institute who helped me over the many hours of testing finally get test up and running for this project.
 
 I would also like to thank Code Institute for teaching me on how to code in JavaScript, and on how to use many of the tools listed above. There work on previous projects has helped me carve out ideas for myself and use them in the creation of this website, and as already noted, 2 small code snippets from previous projects with them have been used in this project for efficiency and display, with another found elsewhere online.
+
+
+## 5.Deployment
+
+This project was deployed using CLOUD9 IDE, committed to git, and then pushed to GitHub using the built in function within Cloud9.
+
+To deploy the project from the GitHub repository to GitHub pages, the following steps were taken:
+
+1. Log into GitHub
+
+2. From the list of repositories on the screen, select Mark1-15/project2-yourweather
+
+3. From the menu items near the top of the page, select settings
+
+4. Scroll down to the GitHub pages section
+
+5. Under Source, click the dropdown menu labelled None and select Master Branch.
+
+6. On selecting Master Branch, the page is automatically refreshed, the website is now deployed.
+
+7. Scroll back down to the GitHub pages section to retrieve the link to the deployed website
+
+At the moment of submitting this milestone project, the Development Branch and the Master Branch are identical.
+
+How to run this project locally
+
+To clone this project from GitHub:
+
+1. Follow this link to the Project GitHub repository:
+GitHub - Mark1-15/project2-yourweather: Fully interactive weather site (My second project at Code Institute focusing on JavaScript)
+
+2. Under the repository name, click 'clone' or 'download' (click the green code button for dropdown).
+
+3. In the clone with HTTPs section, copy the clone URL for the repository.
+
+4. In your local IDE open Git Bash
+
+5. Change the current working directory to the location where you want the cloned directory to be made
+
+6. Type 'git clone', and then paste the URL you copied in step 3
+
+7. Press enter, your local clone will be created
+
+You will need a GitHub account and the chrome browser for this.
+
+Here is the GitHub guide for cloning repositories:
+
+https://pages.github.com/
+
+This project was deployed early in development as per good software development practice to help spot bugs as they appeared on a real website and not just a developer environment. Interestingly, a bug appeared with the weather images on the weather images on the deployed site and not in the development environment, this was discussed in the testing/bugs section. Overall, the deployment of this website was a smooth experience, with no issues flagging up as a result.
