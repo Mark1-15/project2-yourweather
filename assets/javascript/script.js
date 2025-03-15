@@ -52,12 +52,17 @@ const kelvinCheckbox = document.getElementById("kelvin");
 const fahrenheitCheckbox = document.getElementById("fahrenheit");
 const kphCheckbox = document.getElementById("kph"); 
 
+/* Tutor suggested async await function for data variable for global scope, allowing checkbox if statements */
 searchButton.addEventListener("click", async ()=>{
     const data = await checkWeather(searchInput.value);
 
     if(kelvinCheckbox.checked){
         sumKelvin(data.main.temp);
         let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(sumKelvin(data.main.temp)) + "K";
+    }
+    else if(fahrenheitCheckbox.checked){
+        sumFahrenheit(data.main.temp);
+        let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(sumFahrenheit(data.main.temp)) + "°F";
     }
 }) 
 
