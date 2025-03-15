@@ -15,6 +15,7 @@ async function checkWeather(location) {
         console.log(error);
     }
 
+    /* Results Variables */
     const locationName = document.getElementById("location").innerHTML = data.name;
     let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(data.main.temp) + "°C";
     const description = document.getElementById("description").innerHTML = "Description: " + data.weather[0].description;
@@ -57,14 +58,24 @@ searchButton.addEventListener("click", async ()=>{
     const data = await checkWeather(searchInput.value);
 
     if(kelvinCheckbox.checked && fahrenheitCheckbox.checked){
-        // Trigger modal display
+        // Trigger modal display code from Tutor
         const exampleModal = new bootstrap.Modal(document.getElementById("exampleModal"));
         exampleModal.show();
     }   // Checks if kelvin or fahrenheit box checked with kph box
     else if(kphCheckbox.checked && (kelvinCheckbox.checked || fahrenheitCheckbox.checked)){
         sumKPH(data.main.wind);
         let windspeeed = document.getElementById("windspeed").innerHTML = "Windspeed: " + Math.round(sumKPH(data.wind.speed)) + "kph";
-    }  // checks if just the Kelvin box is ticked
+    }   // checks if the Kelvin box is ticked with windspeed to provide kelvin results for temperature
+    else if(kelvinCheckbox.checked && kphCheckbox.checked){
+        sumKPH(data.main.temp);
+        let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(sumKelvin(data.main.temp)) + "K";
+    }
+    // checks if the Fahrenheit box is ticked with windspeed to provide kelvin results for temperature
+    else if(fahrenheitCheckbox.checked && kphCheckbox.checked){
+        sumKPH(data.main.temp);
+        let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(sumFahrenheit(data.main.temp)) + "F";
+    }
+        // checks if just the Kelvin box is ticked
     else if(kelvinCheckbox.checked){
         sumKelvin(data.main.temp);
         let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(sumKelvin(data.main.temp)) + "K";
