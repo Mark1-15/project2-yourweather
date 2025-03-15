@@ -28,11 +28,11 @@ The purpose of this project was to create a website (interactive front end) of a
 
 - Bootstrap 
 
-- NCH Suite Pixillion image converter
+- Jest
 
 - Chrome Dev Tools 
 
-- HTML5 & CSS3
+- JavaScript, HTML5, & CSS3
 
 
 #### 4. Testing
