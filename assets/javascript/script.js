@@ -68,6 +68,14 @@ searchButton.addEventListener("click", async ()=>{
         sumKPH(data.main.wind);
         let windspeeed = document.getElementById("windspeed").innerHTML = "Windspeed: " + Math.round(sumKPH(data.wind.speed)) + "kph";
     }
+    else if(kelvinCheckbox.checked && fahrenheitCheckbox.checked){
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+})
+    }
 }) 
 
 /* Function to turn temperature in C to temperature in Fahrenheit */
