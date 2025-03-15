@@ -58,28 +58,26 @@ searchButton.addEventListener("click", async ()=>{
     const data = await checkWeather(searchInput.value);
 
     if(kelvinCheckbox.checked && fahrenheitCheckbox.checked){
-        // Trigger modal display code from Tutor
+        // Below trigger modal display code from Tutor to show error if both kelvin and fahrenheit are checked
         const exampleModal = new bootstrap.Modal(document.getElementById("exampleModal"));
         exampleModal.show();
-    }   // Checks if kelvin or fahrenheit box checked with kph box
-    else if(kphCheckbox.checked && (kelvinCheckbox.checked || fahrenheitCheckbox.checked)){
+    }   // Below checks if the Kelvin box is ticked with windspeed to provide kelvin results for temperature and kph for windspeed
+    else if(kphCheckbox.checked && kelvinCheckbox.checked){
         sumKPH(data.main.wind);
         let windspeeed = document.getElementById("windspeed").innerHTML = "Windspeed: " + Math.round(sumKPH(data.wind.speed)) + "kph";
-    }   // checks if the Kelvin box is ticked with windspeed to provide kelvin results for temperature
-    else if(kelvinCheckbox.checked && kphCheckbox.checked){
-        sumKPH(data.main.temp);
+        sumKelvin(data.main.temp);
         let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(sumKelvin(data.main.temp)) + "K";
-    }
-    // checks if the Fahrenheit box is ticked with windspeed to provide kelvin results for temperature
+    }   // Below checks if the Fahrenheit box is ticked with windspeed to provide fahrenheit results for temperature and kph for windspeed
     else if(fahrenheitCheckbox.checked && kphCheckbox.checked){
         sumKPH(data.main.temp);
         let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(sumFahrenheit(data.main.temp)) + "F";
-    }
-        // checks if just the Kelvin box is ticked
+        sumKPH(data.main.wind);
+        let windspeeed = document.getElementById("windspeed").innerHTML = "Windspeed: " + Math.round(sumKPH(data.wind.speed)) + "kph";
+    }  // Below checks if just the Kelvin box is ticked
     else if(kelvinCheckbox.checked){
         sumKelvin(data.main.temp);
         let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(sumKelvin(data.main.temp)) + "K";
-    }  // checks if just the Fahrenheit box is ticked
+    }  // Below checks if just the Fahrenheit box is ticked
     else if(fahrenheitCheckbox.checked){
         sumFahrenheit(data.main.temp);
         let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(sumFahrenheit(data.main.temp)) + "°F";
