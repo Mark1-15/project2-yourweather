@@ -143,6 +143,8 @@ As you may be able to see with different code commits, I used a different API at
 
 Nearing the end of the project, when I had a few functions of JavaScript code left to write, I decided that I wanted to use Jest to test this code, to replicate working on this project as within a real world testing driven development environment. I tried searching the web on guides how to install Jest and use it on Visual Studio Code, and after a few failed attempts with different guides followed I decided to consult with a Tutor at code institute who supplied me with their guide. I followed this guide and was still having trouble, after a few hours of debugging and a PC restart we managed to install the npm and Jest which I was then able to use to test snippets of my code.
 
+Furthermore, towards the end of my project I had trouble when writing up the final few code snippets in JavaScript. Getting the optional checkboxes to function (no pun intended) correctly was a real challenge. Thankfully the tutors at code institute proved most helpful, following their guidance, I changed the searchButton click event listener to an async await function. This allowed me to get (again, no pun intended) the API data and store it in a global scope, meaning I could call on it anywhere in the code when needed. This allowed me to start coding up these checkboxes correctly. After a long time and several failed attempts, I finally got the 3 optional checkboxes working by using an "else if" chain in the code, narrowing down the checkbox combinations 1 by 1 until they were all working properly with logical operators.
+
 ##### Minor
 
 I encountered several minor bugs when coding this project that are listed below. Thanks to some basic troubleshooting and my problem-solving abilities, I was able to solve them without too much trouble.
@@ -158,7 +160,9 @@ I would also like to thank the Tutors at code institute who helped me resolve a 
 
 Some human error came into play when creating the optional checkboxes functions, for the Fahrenheit function because I used “+” instead of “*” in the formulae, and I did something similar in the Kilometres per hour function but it was quickly resolved. Setting up Jest to test the code was a pain but definitely worth it as I’m assured these functions work as intended as they display as passed as seen below.
 
-I used the Math.round function to round the temperature result, this caused the results to disappear on the screen. After discovering the syntax error I quickly amended and got the result to work as intended.
+I used the Math.round function to round the temperature result, this caused the results to disappear on the screen. After discovering the syntax error I quickly amended and got the result to work as intended. 
+
+I also had trouble getting the modal to work when both the Fahrenheit and Kelvin checkbox were pressed. After a long while of testing different solutions and some advice from my tutor with online bootstrap guidance from the website, I managed to get this working properly. 
 
 ## 5. Deployment
 
