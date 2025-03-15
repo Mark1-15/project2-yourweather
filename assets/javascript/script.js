@@ -21,7 +21,7 @@ async function checkWeather(location) {
     const main = document.getElementById("main").innerHTML = "Weather: " + data.weather[0].main;
     const humidity = document.getElementById("humidity").innerHTML = "Humidity: " + data.main.humidity + "%";
     const pressure = document.getElementById("pressure").innerHTML = "Pressure: " + data.main.pressure + "mb";
-    const windspeeed = document.getElementById("windspeed").innerHTML = "Windspeed: " + data.wind.speed + "mph";
+    let windspeeed = document.getElementById("windspeed").innerHTML = "Windspeed: " + data.wind.speed + "mph";
     const weatherImage = document.getElementById("weatherImagePic");
 
     /* Got the first line of this code online then added the rest myself */
@@ -63,6 +63,10 @@ searchButton.addEventListener("click", async ()=>{
     else if(fahrenheitCheckbox.checked){
         sumFahrenheit(data.main.temp);
         let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(sumFahrenheit(data.main.temp)) + "°F";
+    }
+    else if(kphCheckbox.checked){
+        sumKPH(data.main.wind);
+        let windspeeed = document.getElementById("windspeed").innerHTML = "Windspeed: " + Math.round(sumKPH(data.wind.speed)) + "kph";
     }
 }) 
 
