@@ -41,6 +41,7 @@ body {
 /* Footer styles */
 .footer {
     background-color: coral;
+    margin-bottom: -50px;
 }
 
 .cu-title {
