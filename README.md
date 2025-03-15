@@ -16,7 +16,47 @@ The purpose of this project was to create a website (interactive front end) of a
 
 - Wireframes
 
-[fill in others here later]
+#### 2. Features
+
+- Existing Features
+
+- Features Left to Implement 
+
+#### 3. Technologies Used
+
+- Github
+
+- Bootstrap 
+
+- NCH Suite Pixillion image converter
+
+- Chrome Dev Tools 
+
+- HTML5 & CSS3
+
+
+#### 4. Testing
+
+- Bug fixes
+
+- Code Testing 
+
+- Lighthouse
+
+- Story Testing 
+
+- Functionality Testing
+
+
+#### 5. Deployment
+
+- How I deployed the project
+
+- How to clone this project 
+
+#### 6. Credits 
+
+- Credits to those who've helped the creation of this project
 
 ## 1. UX
 
