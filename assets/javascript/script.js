@@ -43,14 +43,21 @@ async function checkWeather(location) {
     else if (data.weather[0].main == "Mist"){
         weatherImage.src = "./assets/images/mist.png"
     }
+    return data
 } 
 
-searchButton.addEventListener("click", ()=>{
-    checkWeather(searchInput.value);
+
+/* Code for optional checkboxes */
+const kelvinCheckbox = document.getElementById("kelvin");
+const fahrenheitCheckbox = document.getElementById("fahrenheit");
+const kphCheckbox = document.getElementById("kph"); 
+
+searchButton.addEventListener("click", async ()=>{
+    const data = await checkWeather(searchInput.value);
 
     if(kelvinCheckbox.checked){
         sumKelvin(data.main.temp);
-        let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + sumKelvin(data.main.temp) + "K";
+        let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(sumKelvin(data.main.temp)) + "K";
     }
 }) 
 
@@ -71,10 +78,6 @@ function sumKPH(speed) {
 
   module.exports = { sumFahrenheit, sumKelvin, sumKPH }; 
 
-  /* Code for optional checkboxes */
-  const kelvinCheckbox = document.getElementById(kelvin);
-  const fahrenheitCheckbox = document.getElementById(fahrenheit);
-  const kphCheckbox = document.getElementById(kph); 
 
   /* Add event listener to show temperature as kelvin if clicked */
   searchButton.onclick = function(){
