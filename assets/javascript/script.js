@@ -41,7 +41,7 @@ async function checkWeather(location) {
     else if (data.weather[0].main == "Drizzle"){
         weatherImage.src = "./assets/images/drizzle.png"
     }
-    else if (data.weather[0].main == "Mist"){
+    else if (data.weather[0].main == "Haze"){
         weatherImage.src = "./assets/images/mist.png"
     }
     return data
