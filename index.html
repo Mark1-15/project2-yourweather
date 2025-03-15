@@ -78,13 +78,13 @@
     <div class="col-12 col-md-4 my-2 mt-4">
       <h1 class="center title"><strong>Optional Filters</strong></h1>
       <div>
-       <input type="checkbox" name="kelvin" id="kelvin">
+       <input type="checkbox" name="kelvin" id="kelvin" class="myInput">
         <label for="kelvin">Kelvin</label>
         <p>Tap/Click here to view the temperature in Kelvin</p>
         <br>
       </div>
       <div>
-       <input type="checkbox" name="fahrenheit" id="fahrenheit">
+       <input type="checkbox" name="fahrenheit" id="fahrenheit" class="myInput">
         <label for="fahrenheit">Fahrenheit</label>
         <p>Tap/Click here to view the temperature in Fahrenheit</p>
         <br>
@@ -99,15 +99,22 @@
 </section>
 
 <!-- Error Modal -->
-<div class="modal" tabindex="-1">
+<div class="text-center my-4">
+  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Extra information
+  </button>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Error</h5>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Temperature Error</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>You cannot check Kelvin and Fahrenheit at the same time!.</p>
+        You cannot click Fahrenheit and Kelvin at the same time!
+        Please select either Kelvin or Fahrenheit, or neither for Celsius.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -115,6 +122,7 @@
     </div>
   </div>
 </div>
+</section>
 
     <!-- Footer -->
      <footer class="footer mt-4">
@@ -127,7 +135,8 @@
      </footer>
     
     <!-- Bootstrap JavaScript link-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!-- Bootstrap Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/3d07db4e3b.js" crossorigin="anonymous"></script>

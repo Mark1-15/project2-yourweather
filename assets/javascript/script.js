@@ -56,26 +56,27 @@ const kphCheckbox = document.getElementById("kph");
 searchButton.addEventListener("click", async ()=>{
     const data = await checkWeather(searchInput.value);
 
-    if(kelvinCheckbox.checked){
+    if(kelvinCheckbox.checked && fahrenheitCheckbox.checked){
+        // Trigger modal display
+        const exampleModal = new bootstrap.Modal(document.getElementById("exampleModal"));
+        exampleModal.show();
+    }   // Checks if kelvin or fahrenheit box checked with kph box
+    else if(kphCheckbox.checked && (kelvinCheckbox.checked || fahrenheitCheckbox.checked)){
+        sumKPH(data.main.wind);
+        let windspeeed = document.getElementById("windspeed").innerHTML = "Windspeed: " + Math.round(sumKPH(data.wind.speed)) + "kph";
+    }  // checks if just the Kelvin box is ticked
+    else if(kelvinCheckbox.checked){
         sumKelvin(data.main.temp);
         let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(sumKelvin(data.main.temp)) + "K";
-    }
+    }  // checks if just the Fahrenheit box is ticked
     else if(fahrenheitCheckbox.checked){
         sumFahrenheit(data.main.temp);
         let temperature = document.getElementById("temperature").innerHTML =  "Temperature: " + Math.round(sumFahrenheit(data.main.temp)) + "°F";
-    }
+    }  // checks if just the KPH box is ticked
     else if(kphCheckbox.checked){
         sumKPH(data.main.wind);
         let windspeeed = document.getElementById("windspeed").innerHTML = "Windspeed: " + Math.round(sumKPH(data.wind.speed)) + "kph";
-    }
-    else if(kelvinCheckbox.checked && fahrenheitCheckbox.checked){
-        const myModal = document.getElementById('myModal')
-        const myInput = document.getElementById('myInput')
-
-        myModal.addEventListener('shown.bs.modal', () => {
-        myInput.focus()
-})
-    }
+    } 
 }) 
 
 /* Function to turn temperature in C to temperature in Fahrenheit */
