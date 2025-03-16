@@ -19,16 +19,6 @@
     max-width: 50%;
 }
 
-.input-center {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.input-split {
-    display: flex;
-    justify-content: center;
-}
-
 /* General body styles */
 body {
     background-color: lightblue;

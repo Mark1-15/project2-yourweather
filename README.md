@@ -210,17 +210,25 @@ Testing is an important part of any project, especially in software development 
 
 ##### HTML
 
-The HTML code passed through the industry recognised W3 Validator. 3 Errors and 2 Warning showed up as seen below, these error included a stray end section tag and an unclosed div tag, with the issues being multiple h1 elements that were later changed to h2 elements. After these chenges were implemented, the HTML passed through the validator without any issues, demonstrating that this project has met the HTML requirements as seen below.
+The HTML code passed through the industry recognised W3 Validator (linked below). 3 Errors and 2 Warning showed up as seen below, these error included a stray end section tag and an unclosed div tag, with the issues being multiple h1 elements that were later changed to h2 elements. After these chenges were implemented, the HTML passed through the validator without any issues, demonstrating that this project has met the HTML requirements as seen below.
 
 ![HTML Validator fail](assets/images/README.md-images/image.png)
 
 ![HTML Validator pass](assets/images/README.md-images/image2.png)
 
+https://validator.w3.org/
+
 ##### CSS 
+
+I passed the CSS for this project through the industry recognised W3 CSS validator (linked below) and after removing unused CSS, it passed first try without any issues as seen below.
+
+![alt text](assets/images/README.md-images/image7.png)
+
+https://jigsaw.w3.org/css-validator/ 
 
 ##### JavaScript 
 
-The JavaScript code was tested with JSHint, an industry standard JavaScript code validator. 
+The JavaScript code was tested with JSHint, an industry standard JavaScript code validator (linked below). 
 
 Firstly, 54 warnings arose. Though alarmed at first, these were negligable ES6/Mozilla extensions meaning that it posed no issue to this project as everything was working as expected on all hardware and software. This was ultimately irrelevant. 
 
@@ -239,6 +247,8 @@ Though I was alarmed at first, these warnings were either fixed as seen below wi
 ![alt text](assets/images/README.md-images/image5.png)
 
 ![alt text](assets/images/README.md-images/image6.png)
+
+https://jshint.com/
 
 
 
