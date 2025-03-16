@@ -206,7 +206,15 @@ I also had trouble getting the modal to work when both the Fahrenheit and Kelvin
 
 ### Code Testing
 
+Testing is an important part of any project, especially in software development and web applications to ensure that the site/project is working as intended with no bugs interfering with the user experince. The HTML, CSS, and JavaScript were all tested and verified for this project, demonstrating that the project is fully working as intended.
 
+##### HTML
+
+The HTML code passed through the industry recognised W3 Validator. 3 Errors and 2 Warning showed up as seen below, these error included a stray end section tag and an unclosed div tag, with the issues being multiple h1 elements that were later changed to h2 elements. After these chenges were implemented, the HTML passed through the validator without any issues, demonstrating that this project has met the HTML requirements as seen below.
+
+![HTML Validator fail](assets/images/README.md-images/image.png)
+
+![HTML Validator pass](assets/images/README.md-images/image2.png)
 
 ## 5. Deployment
 
