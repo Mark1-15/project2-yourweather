@@ -204,6 +204,10 @@ I used the Math.round function to round the temperature result, this caused the 
 
 I also had trouble getting the modal to work when both the Fahrenheit and Kelvin checkbox were pressed. After a long while of testing different solutions and some advice from my tutor with online bootstrap guidance from the website, I managed to get this working properly. 
 
+### Code Testing
+
+
+
 ## 5. Deployment
 
 This project was deployed using CLOUD9 IDE, committed to git, and then pushed to GitHub using the built in function within Cloud9.

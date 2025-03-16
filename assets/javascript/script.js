@@ -27,22 +27,22 @@ async function checkWeather(location) {
 
     /* Got the first line of this code online then added the rest myself */
     if (data.weather[0].main == "Rain"){
-        weatherImage.src = "./assets/images/rain.png"
+        weatherImage.src = "./assets/images/rain.png";
     } 
     else if (data.weather[0].main == "Clouds"){
-        weatherImage.src = "./assets/images/clouds.png"
+        weatherImage.src = "./assets/images/clouds.png";
     } 
     else if (data.weather[0].main == "Clear"){
-        weatherImage.src = "./assets/images/clear.png"
+        weatherImage.src = "./assets/images/clear.png";
     } 
     else if (data.weather[0].main == "Snow"){
-        weatherImage.src = "./assets/images/snow.png"
+        weatherImage.src = "./assets/images/snow.png";
     } 
     else if (data.weather[0].main == "Drizzle"){
-        weatherImage.src = "./assets/images/drizzle.png"
+        weatherImage.src = "./assets/images/drizzle.png";
     }
     else if (data.weather[0].main == "Haze"){
-        weatherImage.src = "./assets/images/mist.png"
+        weatherImage.src = "./assets/images/mist.png";
     }
     return data
 } 
@@ -85,8 +85,8 @@ searchButton.addEventListener("click", async ()=>{
     else if(kphCheckbox.checked){
         sumKPH(data.main.wind);
         let windspeeed = document.getElementById("windspeed").innerHTML = "Windspeed: " + Math.round(sumKPH(data.wind.speed)) + "kph";
-    } 
-}) 
+    }
+});
 
 /* Function to turn temperature in C to temperature in Fahrenheit */
 function sumFahrenheit(temp) {
