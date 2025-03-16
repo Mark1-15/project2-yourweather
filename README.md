@@ -266,6 +266,8 @@ Firstly, some of the issues reagrding the performance were negligable, unused bo
 
 ![Performance issue in Lighthouse - Paint element](assets/images/README.md-images/image11.png)
 
+Accessability results are good at a 94 score. Some suggestions came up about changing the color scheme as seen below, however, as the score is high enough these are only suggestions to consider 
+
 
 ## 5. Deployment
 
