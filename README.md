@@ -45,6 +45,8 @@ The purpose of this project was to create a website (interactive front end) of a
 
 - Story Testing 
 
+- Testing with Jest
+
 - Functionality Testing
 
 
@@ -139,7 +141,7 @@ There is a logo that displays the organisations name, sat in a warm, cozy and co
 
 This weather site is fully interactive, allowing users to input a location of their choice to find out the weather, temperature, wind speed, pressure, weather description, and humidity. There are 3 other optional checkboxes for the user to interactive to use if they wish. Firstly, the kelvin checkbox converts the temperature result to Kelvin instead of Celsius, likewise the Fahrenheit checkbox converts the temperature from Celsius to Fahrenheit. Lastly, the Kilometres per hour checkbox changes the wind speed result from miles per hour to kilometres per hour. When a user loads the page, there is a search image on the bootstrap image card as a prompt for the user to search for a location, which will then change to align with the weather of the user searched area. 
 
-There is a footer on the page that contains the site owner's contact information. It contains a phone number and email address, allowing anyone to easily contact the site owner for any requests, and it also contains social media links linking users to the site's social media pages to follow for any future updates to the site.
+There is a footer on the page that contains the site owner's contact information. It contains an email address, allowing anyone to easily contact the site owner for any requests, and it also contains social media links linking users to the site's social media pages to follow for any future updates to the site.
 
 ##### Features left to implement
 
@@ -151,6 +153,8 @@ Secondly, further details regarding the weather such as the UV index and rainfal
 
 Thirdly, background images or colors to coincide with the weather results would have been a nice touch, providing an authentic weather site feel with pleasing design. However, this does not detract from the practicality of this site, as users are still able to procure their desired weather information.
 Ideally, these would be great additions to the site, enhancing its usability even further. However, the lack of these features do not detract anything from the site as the purpose of this site is to display the current weather of any given location, therefore it’s purpose overall is fully met.
+
+As the time is now over to work on this project, I would have liked to implement an 'hit the enter key to search function but unfortunately I couldn't get this to work properly and had to leave it out. And most of all, I regret not having a sytem that alerts the user if an spelling error has occured as I have ran out of time. A simple prompt like a modal to alert the user that their request is faulty would be useful and I may implement this in the future.
 
 
 ## 3. Technologies Used
@@ -181,7 +185,7 @@ I would also like to thank Code Institute for teaching me on how to code in Java
 
 As you may be able to see with different code commits, I used a different API at the start of the project compared to the finished product. I switched weather API’s after starting the project as I realised that the first API’s results wasn’t tailored to the user and project needs. Therefore, I set up another account for another API and then implemented this into the finished product. This took a lot of time out of my schedule having to start again and familiarise myself with a new API but with the finished product working the way it is the switch was necessary and worth it.
 
-Nearing the end of the project, when I had a few functions of JavaScript code left to write, I decided that I wanted to use Jest to test this code, to replicate working on this project as within a real world testing driven development environment. I tried searching the web on guides how to install Jest and use it on Visual Studio Code, and after a few failed attempts with different guides followed I decided to consult with a Tutor at code institute who supplied me with their guide. I followed this guide and was still having trouble, after a few hours of debugging and a PC restart we managed to install the npm and Jest which I was then able to use to test snippets of my code.
+Nearing the end of the project, when I had a few functions of JavaScript code left to write, I decided that I wanted to use Jest to test this code, to replicate working on this project as within a real world testing driven development environment. I tried searching the web on guides how to install Jest and use it on Visual Studio Code, and after a few failed attempts with different guides followed I decided to consult with a Tutor at code institute who supplied me with their guide. I followed this guide and was still having trouble, after a few hours of debugging and a PC restart we managed to install the npm and Jest which I was then able to use to test snippets of my code. Unfortunately, a bug may still be in the console at the time of submission with "module as undefines", this was used for testing with Jest and is theerfore no issue for this project.
 
 Furthermore, towards the end of my project I had trouble when writing up the final few code snippets in JavaScript. Getting the optional checkboxes to function (no pun intended) correctly was a real challenge. Thankfully the tutors at code institute proved most helpful, following their guidance, I changed the searchButton click event listener to an async await function. This allowed me to get (again, no pun intended) the API data and store it in a global scope, meaning I could call on it anywhere in the code when needed. This allowed me to start coding up these checkboxes correctly. After a long time and several failed attempts, I finally got the 3 optional checkboxes working by using an "else if" chain in the code, narrowing down the checkbox combinations 1 by 1 until they were all working properly with logical operators.
 
@@ -222,7 +226,7 @@ https://validator.w3.org/
 
 I passed the CSS for this project through the industry recognised W3 CSS validator (linked below) and after removing unused CSS, it passed first try without any issues as seen below.
 
-![alt text](assets/images/README.md-images/image7.png)
+![CSS Validator](assets/images/README.md-images/image7.png)
 
 https://jigsaw.w3.org/css-validator/ 
 
@@ -240,13 +244,13 @@ Lastly, 2 undefined and 14 unused variables showed up. This was no issue however
 
 Though I was alarmed at first, these warnings were either fixed as seen below with a lower warning count, or ultimately posed no issue the project and were therefore appropriately dissmissed. No major warning or issues showed up at any time thankfully. The JavaScript code is fully functioning with no actual issues, meaning the code has passed validation and is usable for this project.
 
-![alt text](assets/images/README.md-images/image3.png)
+![JavaScript Warnings](assets/images/README.md-images/image3.png)
 
-![alt text](assets/images/README.md-images/image4.png)
+![JavaScript Warnings](assets/images/README.md-images/image4.png)
 
-![alt text](assets/images/README.md-images/image5.png)
+![JavaScript Warnings](assets/images/README.md-images/image5.png)
 
-![alt text](assets/images/README.md-images/image6.png)
+![JavaScript Warnings](assets/images/README.md-images/image6.png)
 
 https://jshint.com/
 
@@ -305,7 +309,7 @@ This user story has been fully met as there are optional checkboxes available on
 
 ![User Story Result Measurement Option](assets/images/README.md-images/image20.png)
 
-There are othe optional "could-have" user stories seen below that were not able to be implemented as there was not enough time, however I may implement them in the future. The lack of these features does not diminish this site in anyway. And the purpose of this site and it's primary user stories has been fully met.
+There are other optional "could-have" user stories seen below that were not able to be implemented as there was not enough time, however I may implement them in the future. The lack of these features does not diminish this site in anyway. And the purpose of this site and it's primary user stories has been fully met.
 
 ![Could have user stories](assets/images/README.md-images/image21.png)
 
@@ -392,7 +396,7 @@ When Kelvin and KPH are checked the results are modified to cater for this reque
 
 When Fahrenheit and KPH are checked the results are modified to cater for this request:
 
-![kelvin and kph results correct](assets/images/README.md-images/image38.png)
+![fahrenheit and kph results correct](assets/images/README.md-images/image38.png)
 
 All other optional checkbox combinations are working correctly.
 
@@ -470,6 +474,8 @@ I would also like to thank the free technologies that I have been able to use fo
 I would like to thank the creators for the YouTube tutorial video below I used that helped me with ideas to construct my JavaScript code.
 
 https://www.youtube.com/watch?v=MIYQR-Ybrn4 
+
+Weather app cards - https://greatstack.dev/assets/weather-app-javascript
 
 I would also like to mention that I used the README.md from my last project with Code institute as a template for this README.md, and the social links in the footer of the website from my last project. Like all good software developers, it's good to reuse code (and other things) when appropriate to do so to save time, allowing me to direct my attention elsewhere.
 
