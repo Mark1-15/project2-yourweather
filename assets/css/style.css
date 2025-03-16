@@ -1,7 +1,7 @@
 /* Title */
 .title {
     text-align: center;
-    color: orange;
+    color: yellow;
     text-decoration: underline;
     font-weight: 200;
 }
@@ -30,7 +30,7 @@ body {
 
 /* Footer styles */
 .footer {
-    background-color: pink;
+    background-color: coral;
     margin-bottom: -50px;
 }
 

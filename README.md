@@ -266,7 +266,20 @@ Firstly, some of the issues reagrding the performance were negligable, unused bo
 
 ![Performance issue in Lighthouse - Paint element](assets/images/README.md-images/image11.png)
 
-Accessability results are good at a 94 score. Some suggestions came up about changing the color scheme as seen below, however, as the score is high enough these are only suggestions to consider 
+Accessability results are good at a 94 score. Some suggestions came up about changing the color scheme as seen below, however, as the score is high enough these are only suggestions to consider. I tried changing the colors of the title and footer background to add more contrast yet the score remained similar with no noticible benefits as seen below. Therefore, I have kept the original color palate as I believe to be be more aesthetically pleasing with a high accessability score.
+
+![Same Accessability score despite color change.](assets/images/README.md-images/image12.png)
+
+Best pracises hit a score of 93, a high score indeed. Some recomendations were made to change the search icon yet I believe it to look acceptable and appropriate to convey the idea of the user using the search bar to search for a location. Furthermore, the console logs an error as module is undefined. This was used to test the code with Jest in script.test.js and will remain theer as a result because it does not interfere with the project or user experience in anyway and demonstatres that I have rigourously tested thsi project.
+
+
+![Console error module](assets/images/README.md-images/image13.png)
+
+![Low image resolution](assets/images/README.md-images/image14.png)
+
+Therefore, after testing this project using lighthouse I can demonstrate that this projects meets the accessability, best practice, and performance categories with all scores over 90 and some even near 100 a perfect score.
+
+![Lighthouse high scores tested](assets/images/README.md-images/image15.png)
 
 
 ## 5. Deployment
