@@ -228,15 +228,17 @@ Secondly, missing colons arose as warnings however these were quickly added and 
 
 Thirdly, "data" was stated as being out of scope but ultimately this wasn't an issue because it works as intended with the variables still able to draw on the data procured from the API, and successfully displaying the results in index.html, meaning it I was able to dismiss this as it is working as intended.
 
-Lastly, 2 undefined and 14 unused variables showed up. This was no issue however, as the undefined variables were lined to and being used by the bootstrap modal file and was working as intended. The 14 unused variables were linked to index.html to successfully display the results from the API, again showing no issue.
+Lastly, 2 undefined and 14 unused variables showed up. This was no issue however, as the undefined variables were lined to and being used by the bootstrap modal file and was working as intended, with the module variable used for testing with Jest and was working as inteded. The 14 unused variables were linked to index.html to successfully display the results from the API, again showing no issue.
 
-Though I was alarmed at first, these warnings were either fixed, or ultimately posed no issue the project and were therefore appropriately dissmissed. No major warning or issues showed up at any time thankfully. The JavaScript code is fully functioning with no actual issues, meaning the code has passed validation and is usable for this project.
+Though I was alarmed at first, these warnings were either fixed as seen below with a lower warning count, or ultimately posed no issue the project and were therefore appropriately dissmissed. No major warning or issues showed up at any time thankfully. The JavaScript code is fully functioning with no actual issues, meaning the code has passed validation and is usable for this project.
 
 ![alt text](assets/images/README.md-images/image3.png)
 
 ![alt text](assets/images/README.md-images/image4.png)
 
 ![alt text](assets/images/README.md-images/image5.png)
+
+![alt text](assets/images/README.md-images/image6.png)
 
 
 
