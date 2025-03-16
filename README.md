@@ -216,6 +216,30 @@ The HTML code passed through the industry recognised W3 Validator. 3 Errors and 
 
 ![HTML Validator pass](assets/images/README.md-images/image2.png)
 
+##### CSS 
+
+##### JavaScript 
+
+The JavaScript code was tested with JSHint, an industry standard JavaScript code validator. 
+
+Firstly, 54 warnings arose. Though alarmed at first, these were negligable ES6/Mozilla extensions meaning that it posed no issue to this project as everything was working as expected on all hardware and software. This was ultimately irrelevant. 
+
+Secondly, missing colons arose as warnings however these were quickly added and amended. 
+
+Thirdly, "data" was stated as being out of scope but ultimately this wasn't an issue because it works as intended with the variables still able to draw on the data procured from the API, and successfully displaying the results in index.html, meaning it I was able to dismiss this as it is working as intended.
+
+Lastly, 2 undefined and 14 unused variables showed up. This was no issue however, as the undefined variables were lined to and being used by the bootstrap modal file and was working as intended. The 14 unused variables were linked to index.html to successfully display the results from the API, again showing no issue.
+
+Though I was alarmed at first, these warnings were either fixed, or ultimately posed no issue the project and were therefore appropriately dissmissed. No major warning or issues showed up at any time thankfully. The JavaScript code is fully functioning with no actual issues, meaning the code has passed validation and is usable for this project.
+
+![alt text](assets/images/README.md-images/image3.png)
+
+![alt text](assets/images/README.md-images/image4.png)
+
+![alt text](assets/images/README.md-images/image5.png)
+
+
+
 ## 5. Deployment
 
 This project was deployed using CLOUD9 IDE, committed to git, and then pushed to GitHub using the built in function within Cloud9.
