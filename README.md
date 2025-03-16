@@ -281,6 +281,22 @@ Therefore, after testing this project using lighthouse I can demonstrate that th
 
 ![Lighthouse high scores tested](assets/images/README.md-images/image15.png)
 
+##### Story Testing
+
+This section will look back onto the user stories to show how the end result has met the 'must-have' and 'should-have' user stories criteria.
+
+This user story has been fully met as the site is responsive and tradidionally structured, allowing a familiar layout that any user can appreciate. With a navbar at the top of the page despite no content needed as this is a single page website. The content of the page is well structured regardless of the screen size of user devices, and there is a footer at the bottome of the page to promp contact if required. The purpose of the site is also explained in plain view with the opening paragraph of the site.
+
+![User story Page layout met](assets/images/README.md-images/image16.png)
+
+The API user story has been met as users can not only input any location within the UK, but also the whole world and retrieve a weather forcast of any location they wish. There is a search input field allowing users to type out their location, and there is a search button for users to retrieve the results of their desired location.
+
+![User story API met](assets/images/README.md-images/image17.png)
+
+The Temperature user story has been fully met as there is a temperature display on the site next to the weather icon with a title 'Temperature:' to display the temperature result.
+
+![User story Temperature met](assets/images/README.md-images/image18.png)
+
 
 ## 5. Deployment
 
