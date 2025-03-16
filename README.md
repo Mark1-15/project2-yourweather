@@ -250,6 +250,21 @@ Though I was alarmed at first, these warnings were either fixed as seen below wi
 
 https://jshint.com/
 
+##### Lighthouse
+
+Using Chrome Dev Tools, i was able to use the Lighthouse tool to test the reliability and functionality of the website from a user end point of view. I decided to use incognito mode to run the test as this blocks and web extensions that can falsely hinder results. After first running the test, here are the results I received:
+
+![Lighthouse results](assets/images/README.md-images/image8.png)
+
+Overall great results from Performace, Accessability, and Best Practice with the 3 of them being in the green and achieving a score over 90.
+
+Firstly, some of the issues reagrding the performance were negligable, unused bootstrap css was one of the main culprits however I was unable to do anything about this so I have decided to leave it be. This is no issue as the impact is minimal. Furthermore, other issues included loading up fontawesome icons, and the opening paragraph paint background and paragraph. Seeing that the impact of these were negligable I decided to leave them as the impact once again was irrelevant.
+
+![Performance issue in Lighthouse](assets/images/README.md-images/image9.png)
+
+![Performance issue in Lighthouse - Bootstrap](assets/images/README.md-images/image10.png)
+
+![Performance issue in Lighthouse - Paint element](assets/images/README.md-images/image11.png)
 
 
 ## 5. Deployment
