@@ -316,11 +316,33 @@ https://github.com/users/Mark1-15/projects/4/views/1
 
 ##### Testing with Jest
 
-For this project, I used Jest, the official JavaScript testing framework. I used this to create and test 3 functions for this project, the functions that converted the temperature from Celsius to Fahrenheit, to Kelvin, and convert the windspeed from mph to kph. I'm glad I used this framework despite the significant challenges I faces setting it up for this project as my wind speed converter to kph would have been wrong otherwise as I would have divided the result instead of the multiplying like the test informed me of.
+For this project, I used Jest, the official JavaScript testing framework. I used this to create and test 3 functions for this project, the functions that converted the temperature from Celsius to Fahrenheit, to Kelvin, and convert the windspeed from mph to kph. I'm glad I used this framework despite the significant challenges I faces setting it up for this project as my wind speed converter to kph would have been wrong otherwise as I would have divided the result instead of the multiplying like the test informed me of. I would also like to thank the Tutors at Code Institute who helped me set this up properly.
 
 My first example test from the official Jest website to ensure I set up the sytem correctly:
 
-![alt text](image.png)
+![Example Jest test](assets/images/README.md-images/image22.png)
+
+My first test for the Fahrenheit converter inititially failed as I added the (9/5) instead in multiplying, but this was later resolved as seen in the second image (first failed image might not seem like it but this was due to another error linking the files after I fixed the error).
+
+![F test fail](assets/images/README.md-images/image23.png)
+
+![F test pass](assets/images/README.md-images/image24.png)
+
+Below shows the Kelvin test failing as the file was not correctly linked to script.js
+
+![K test fail](assets/images/README.md-images/image25.png)
+
+Below is when the file was linked correctly:
+
+![K test pass](assets/images/README.md-images/image26.png)
+
+I had trouble getting the wind speed to pass until I had written the formula wrong after analysing the results. Then it passed as seen below.
+
+![All 3 tests pass - F, K and KPH](image.png)
+
+Testing with Jest was a great experience, and a relief to know that some of the functions in this project have been rigourously tested and created with the principles of Testing Driven Development.
+
+
 
 ## 5. Deployment
 
