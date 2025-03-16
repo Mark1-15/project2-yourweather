@@ -297,6 +297,30 @@ The Temperature user story has been fully met as there is a temperature display 
 
 ![User story Temperature met](assets/images/README.md-images/image18.png)
 
+The below user story has been fully met as users are able to search for a wind speed at the location of their choice, which in turn returns a result next to a plain Wind speed title. There is an optional checkbox that converts wind speed from miles per hour to killometers per hour for users if they wish.
+
+![User story Wind speed](assets/images/README.md-images/image19.png)
+
+This user story has been fully met as there are optional checkboxes available on the screen that allows user to check to receive temperature results in Kelvin or Fahrenheit instead of Celsius, and wind speed in kph instaed of mph as discussed previously.
+
+![User Story Result Measurement Option](assets/images/README.md-images/image20.png)
+
+There are othe optional "could-have" user stories seen below that were not able to be implemented as there was not enough time, however I may implement them in the future. The lack of these features does not diminish this site in anyway. And the purpose of this site and it's primary user stories has been fully met.
+
+![Could have user stories](assets/images/README.md-images/image21.png)
+
+Here is a link to the user stories section if you wish to visit it for yourself:
+
+https://github.com/users/Mark1-15/projects/4/views/1
+
+
+##### Testing with Jest
+
+For this project, I used Jest, the official JavaScript testing framework. I used this to create and test 3 functions for this project, the functions that converted the temperature from Celsius to Fahrenheit, to Kelvin, and convert the windspeed from mph to kph. I'm glad I used this framework despite the significant challenges I faces setting it up for this project as my wind speed converter to kph would have been wrong otherwise as I would have divided the result instead of the multiplying like the test informed me of.
+
+My first example test from the official Jest website to ensure I set up the sytem correctly:
+
+![alt text](image.png)
 
 ## 5. Deployment
 
