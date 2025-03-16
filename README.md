@@ -338,11 +338,79 @@ Below is when the file was linked correctly:
 
 I had trouble getting the wind speed to pass until I had written the formula wrong after analysing the results. Then it passed as seen below.
 
-![All 3 tests pass - F, K and KPH](image.png)
+![All 3 tests pass - F, K and KPH](assets/images/README.md-images/image27.png)
 
 Testing with Jest was a great experience, and a relief to know that some of the functions in this project have been rigourously tested and created with the principles of Testing Driven Development.
 
+##### Functionality Testing 
 
+This section will document the testing the website will undergo to ensure everything about the website is working as it should be. A table is below noting the action to test, the expected behaviour, and whether or not it passes or fails.
+
+| Action        | Expected behaviour  | Pass/Fail|
+| ------------- |:-------------:| -----:|
+| Type in a location in the search bar and click the search button | The location, with all of the weather fields are filled in correctly | Pass |
+| Click on Kelvin checkbox then click search | Temperature of location is given in kelvin| Pass|
+| Click on Fahrenheit checkbox then click search | Temperature of location is given in fahrenheit| Pass|
+| Click on Kelvin and Fahrenheit checkboxes then click search | Error modal pops up explaining the error| Pass|
+| Click on Killometers per hour checkbox then click search | Wind speed of location is given in killometers per hour| Pass|
+| Click on Fahrenheit and KPH checkboxes then click search | Temperature result in Fahrenheit, wind speed result in kph| Pass|
+| Click on Kelvin and KPH checkboxes then click search | Temperature result in Kelvin, wind speed result in kph| Pass|
+| Click on all 3 checkboxes | Error modal pops up explaining the user error regarding temperature| Pass|
+| Check each page to see if favicons display correctly on page | Favicons display correctly on each page| Pass|
+| Click on all 3 social media links in footer | Each link takes you to the appropriate site| Pass|
+| Each weather card corresponds to the weather result when searching a location | The weather cards correspond to the current weather at the location| Pass|
+
+Here is the cloud weather image properly assigned:
+
+![cloud image result](assets/images/README.md-images/image28.png)
+
+Here is the clear weather image properly assigned:
+
+![clear image result](assets/images/README.md-images/image29.png)
+
+Here is the snow weather image properly assigned:
+
+![snow image result](assets/images/README.md-images/image30.png)
+
+Here is the mist/haze weather image properly assigned:
+
+![haze image result](assets/images/README.md-images/image31.png)
+
+Here is the rain weather image properly assigned:
+
+![rain image result](assets/images/README.md-images/image32.png)
+
+Despite trying various locations, I could not find a location with drizzle. However, I believe that it works fully as the code is constructed the same as the other weather image cards that work completely fine and therefore conclude that it is fully functioning as it has no reason not to be.
+
+Here is the error modal if Kelvin and Fahrenheit are checked when the users search:
+
+![error modal](assets/images/README.md-images/image36.png)
+
+When Kelvin and KPH are checked the results are modified to cater for this request:
+
+![kelvin and kph results correct](assets/images/README.md-images/image37.png)
+
+When Fahrenheit and KPH are checked the results are modified to cater for this request:
+
+![kelvin and kph results correct](assets/images/README.md-images/image38.png)
+
+All other optional checkbox combinations are working correctly.
+
+The website is fully responsive to the user's device screen size as seen by the images below:
+
+Mobile(320 x 562):
+
+![mobile responsive](assets/images/README.md-images/image33.png)
+
+Tablet(768 x 1125):
+
+![tablet responsive](assets/images/README.md-images/image34.png)
+
+XXL Desktop(2560 x 3750):
+
+![XXL Desktop responsive](assets/images/README.md-images/image35.png)
+
+As seen by these images, the website is fully reponsive to all of these screensizes and everything else in between.
 
 ## 5. Deployment
 
